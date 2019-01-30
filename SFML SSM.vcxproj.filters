@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{bec25c56-1311-4271-bf6a-b8b98bcd021c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{56347dc9-36e0-4756-a2a1-7098edaa6961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Toolbox">
+      <UniqueIdentifier>{abc91852-4b29-4f44-9e9b-3b9b3068ed21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SFML">
+      <UniqueIdentifier>{11874774-6159-4ee0-bf70-e6ea9f0c1c52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SFML-2.4.2\bin\sfml-audio-d-2.dll">
+      <Filter>Source Files\SFML</Filter>
+    </None>
+    <None Include="..\SFML-2.4.2\bin\sfml-graphics-d-2.dll">
+      <Filter>Source Files\SFML</Filter>
+    </None>
+    <None Include="..\SFML-2.4.2\bin\sfml-network-d-2.dll">
+      <Filter>Source Files\SFML</Filter>
+    </None>
+    <None Include="..\SFML-2.4.2\bin\sfml-system-d-2.dll">
+      <Filter>Source Files\SFML</Filter>
+    </None>
+    <None Include="..\SFML-2.4.2\bin\sfml-window-d-2.dll">
+      <Filter>Source Files\SFML</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStart.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Toolbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Obstacles.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobiles.h">
+      <Filter>Source Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="DEFINITIONS.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Source Files\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files\Toolbox</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
