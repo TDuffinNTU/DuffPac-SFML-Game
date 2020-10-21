@@ -2,6 +2,7 @@
 
 #include "SFML/Graphics.hpp"
 #include "Obstacles.h"
+#include "Scene.h"
 #include <vector>
 
 namespace Mobiles {
@@ -53,7 +54,7 @@ namespace Mobiles {
 	{
 	// Class for handling player movement and other events
 	public:
-		Player(sf::Vector2f _grid_offset, float _grid_size, 
+		Player(Toolbox::Scene* _gamescene,  sf::Vector2f _grid_offset, float _grid_size,
 			sf::Vector2f _start_grid_pos, sf::Texture& _texture);
 		void Input();
 		void Update();
@@ -65,6 +66,7 @@ namespace Mobiles {
 		bool dead = false;
 		// Moves 'speed' grid-squares every tick
 		float speed = 0.5f; 
+		Toolbox::Scene* gamescene;
 		
 	};
 

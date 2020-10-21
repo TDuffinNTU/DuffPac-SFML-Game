@@ -18,13 +18,9 @@ namespace Toolbox
 		void Tick();
 		void Update(const float dt);
 		void Draw(const float dt);		
-
+		bool FreeSpaceInDirection(sf::Vector2f grid_pos, sf::Vector2f dir);
 		GameScene(Game* game);
-	private:
-		// Refactor: Implementing an FSM to make gameflow much easier to understand
-
-
-
+	private:	
 		// Main scene clock, initial countdown variables
 		sf::Clock clock;
 		const float READYTIME = 3.0f;
@@ -66,6 +62,7 @@ namespace Toolbox
 		// Wall instances
 		Obstacles::Wall* wall;
 		std::vector<Obstacles::Wall*> walls;
+		
 
 		// Enemy instances and clock for random seeding
 		sf::Clock rand_clock;

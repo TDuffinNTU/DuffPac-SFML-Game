@@ -281,6 +281,7 @@ namespace Toolbox
 	}
 
 	void GameScene::CheckClicked() 
+		// Need a new solution for ninty
 	// Checks to see if any button has been clicked
 	{
 		if (gameptr->SpriteClicked(btn_return))
@@ -296,6 +297,7 @@ namespace Toolbox
 	}
 
 	void GameScene::LoadLevel() 
+		// TODO Globalise this to allow for ingame map editor
 	// Loads the level into the scene from a txt file
 	{
 		// Opens the map file to be loaded
@@ -346,6 +348,7 @@ namespace Toolbox
 	}
 
 	int GameScene::Highscore(bool _write) 
+		// TODO change _write bool to a score int, globalise it so can access in other states
 	// Loads the current Hiscore if _write is set to false, else writes a new score to the file
 	{
 		std::fstream score_file;
@@ -382,5 +385,17 @@ namespace Toolbox
 			// Return 0 as a successful write
 			return 0;
 		}
+	}
+
+	bool GameScene::FreeSpaceInDirection(sf::Vector2f grid_pos, sf::Vector2f dir) {
+		for (uint16_t i = 0; i < walls.size(); i++)
+		{
+			if (grid_pos + dir == walls[i]->grid_pos) {
+				return false;
+				printf("Beep!");
+			}
+		}
+
+		return true;
 	}
 }

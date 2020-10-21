@@ -4,15 +4,18 @@
 
 namespace Mobiles
 {
-	Player::Player(sf::Vector2f _grid_offset, float _grid_size, 
+	Player::Player(Toolbox::Scene* _gamescene, sf::Vector2f _grid_offset, float _grid_size,
 		sf::Vector2f _start_grid_pos, sf::Texture& _texture)
 	{
 		// Set up the sprite position and texture
+		gamescene = _gamescene;
 		sprite.setTexture(_texture);
+		sprite.setOrigin(_texture.getSize().x / 2, _texture.getSize().y / 2);
 		sprite.setPosition((_start_grid_pos * _grid_size) + _grid_offset);
+		sprite.move(sprite.getOrigin());
 		start_grid_pos = _start_grid_pos;
 		grid_pos = _start_grid_pos;
-		grid_offset = _grid_offset;
+		grid_offset = _grid_offset + sprite.getOrigin();
 		grid_size = _grid_size;
 		dead = false;
 	}
@@ -25,23 +28,29 @@ namespace Mobiles
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) 
 		{
 			delta_pos = UP;
-			keypress = true; 
+			keypress = true;
+			sprite.setRotation(ROT_UP);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) 
 		{ 
 			delta_pos = DOWN; 
 			keypress = true; 
+			sprite.setRotation(ROT_DOWN);
 		}			
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) 
 		{ 
 			delta_pos = LEFT;
 			keypress = true; 
+			sprite.setRotation(ROT_LEFT);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) 
 		{ 
 			delta_pos = RIGHT;
 			keypress = true; 
+			sprite.setRotation(ROT_RIGHT);
 		}			
+
+		gamescene.free // totally wrong way to go about this patch
 
 		// Only change delta if a keypress has been logged!
 		if (keypress) 
@@ -63,6 +72,8 @@ namespace Mobiles
 
 	void Player::CheckCollision(std::vector<Obstacles::Wall*>& _obstacles)
 	{
+
+
 		// Move by delta_pos		
 		sf::Vector2f old_grid_pos(grid_pos);
 		sf::Vector2i new_pix_pos = sf::Vector2i(((old_grid_pos + delta_pos) * grid_size) 

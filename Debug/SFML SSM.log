@@ -1,28 +1,127 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFML SSM.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFML SSM.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Coin.cpp
   Enemy.cpp
-c:\users\thoma\desktop\duffpac\enemy.cpp(74): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\enemy.cpp(85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Enemy.cpp(74,48): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Enemy.cpp(74,33): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Enemy.cpp(85,48): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Enemy.cpp(85,33): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
   Game.cpp
-c:\users\thoma\desktop\duffpac\game.cpp(69): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(69): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(78): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(78): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Game.cpp(69,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Game.cpp(69,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Game.cpp(78,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Game.cpp(78,11): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
   GameScene.cpp
-c:\users\thoma\desktop\duffpac\gamescene.cpp(61): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(109): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(202): warning C4244: 'argument': conversion from 'sf::Int64' to 'int', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(319): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(324): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(328): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(331): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(335): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(61,52): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(66,31): error C2661: 'Mobiles::Player::Player': no overloaded function takes 4 arguments
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(109,64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(202,68): warning C4244: 'argument': conversion from 'sf::Int64' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(321,24): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(321,21): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(326,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(326,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(330,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(330,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(333,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(333,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(337,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\GameScene.cpp(337,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   Main.cpp
   MenuScene.cpp
   Obstacle.cpp
   SceneStart.cpp
   Player.cpp
-c:\users\thoma\desktop\duffpac\player.cpp(60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\player.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(13,67): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(13,41): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(56,3): error C2228: left of '.freee' must have class/struct/union
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(56,3): message : type is 'Toolbox::Scene *'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(56,3): message : did you intend to use '->' instead?
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(56,3): error C2143: syntax error: missing ';' before 'if'
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(69,48): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(69,33): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(81,48): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Player.cpp(81,33): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
   Generating Code...
-  SFML SSM.vcxproj -> C:\Users\thoma\Desktop\DuffPac\Debug\DuffPac SFML.exe
