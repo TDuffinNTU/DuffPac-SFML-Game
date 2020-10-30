@@ -1,28 +1,67 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFML SSM.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Coin.cpp
-  Enemy.cpp
-c:\users\thoma\desktop\duffpac\enemy.cpp(74): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\enemy.cpp(85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Game.cpp
-c:\users\thoma\desktop\duffpac\game.cpp(69): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(69): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(78): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-c:\users\thoma\desktop\duffpac\game.cpp(78): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFML SSM.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   GameScene.cpp
-c:\users\thoma\desktop\duffpac\gamescene.cpp(61): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(109): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(202): warning C4244: 'argument': conversion from 'sf::Int64' to 'int', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(319): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(324): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(328): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(331): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\gamescene.cpp(335): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Main.cpp
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(61,52): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(62,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(109,64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(202,68): warning C4244: 'argument': conversion from 'sf::Int64' to 'int', possible loss of data
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(320,24): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(320,21): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(325,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(325,39): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(329,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(329,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(339,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(339,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(343,84): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\GameScene.cpp(343,81): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   MenuScene.cpp
-  Obstacle.cpp
-  SceneStart.cpp
-  Player.cpp
-c:\users\thoma\desktop\duffpac\player.cpp(60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\thoma\desktop\duffpac\player.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Generating Code...
-  SFML SSM.vcxproj -> C:\Users\thoma\Desktop\DuffPac\Debug\DuffPac SFML.exe
+  SFML SSM.vcxproj -> C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\Debug\DuffPac SFML.exe

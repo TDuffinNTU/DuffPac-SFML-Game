@@ -1,0 +1,2 @@
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\Debug\DuffPac SFML.exe
+C:\Users\thoma\Desktop\simple_example\DuffPac-SFML-Game\Debug\DuffPac SFML.pdb

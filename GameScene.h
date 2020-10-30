@@ -22,7 +22,7 @@ namespace Toolbox
 		GameScene(Game* game);
 	private:
 		// Refactor: Implementing an FSM to make gameflow much easier to understand
-
+		sf::Color ghost_cols[5] = {sf::Color(200,50,50), sf::Color(80,80,255), sf::Color::Yellow, sf::Color(0,200,0), sf::Color(255,165,0)};
 
 
 		// Main scene clock, initial countdown variables

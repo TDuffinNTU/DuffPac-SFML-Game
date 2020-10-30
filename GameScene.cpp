@@ -59,7 +59,7 @@ namespace Toolbox
 
 		// Set grid size/offset
 		grid_size = gameptr->GetTexture("WALL").getSize().x;
-		grid_offset = sf::Vector2f(30, 80);
+		grid_offset = sf::Vector2f(WIDTH/2.0 - (grid_size * 9), 80);
 
 		// Load the player at the start pos
 		LoadLevel();
@@ -226,7 +226,7 @@ namespace Toolbox
 			game_over_clock.restart();
 			if (score > hi_score) 
 			{
-				printf("NEW HIGH SCORE: %i, OLD: %i\n", score, hi_score);
+				//printf("NEW HIGH SCORE: %i, OLD: %i\n", score, hi_score);
 				new_hi_score = true;
 				Highscore(true);
 			}
@@ -305,6 +305,7 @@ namespace Toolbox
 		if (map_file.is_open()) 
 		{
 			// Variables X and Y track positions
+			int enemies_count = 0;
 			int y = 0;
 			for (std::string line; std::getline(map_file, line);) 
 			{
@@ -324,12 +325,19 @@ namespace Toolbox
 						player_start_pos = sf::Vector2f(x, y);
 						break;
 					case 'X':
-						// Start an enemy at locations denoted by "X"
+						// Start an enemy at locations denoted by "X"						
 						enemies.push_back(new Mobiles::Enemy(grid_offset, grid_size, sf::Vector2f(x, y),
 							gameptr->GetTexture("ENEMY")));
+						if (enemies_count < 6) {
+							enemies.back()->sprite.setColor(ghost_cols[enemies_count]);
+						}
+						else {
+							enemies.back()->sprite.setColor(sf::Color::Magenta);
+						}
+						enemies_count++;
 						// Start a coin beneath the enemy
 						coins.push_back((new Obstacles::Coin(grid_offset, grid_size, sf::Vector2f(x, y),
-							gameptr->GetTexture("COIN"))));
+							gameptr->GetTexture("COIN"))));						
 						break;
 					case '.':
 						coins.push_back((new Obstacles::Coin(grid_offset, grid_size, sf::Vector2f(x, y),
