@@ -1,0 +1,2 @@
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Debug\DuffPac SFML.exe
+C:\Users\User\Documents\GitHub\DuffPac-SFML-Game\Debug\DuffPac SFML.pdb

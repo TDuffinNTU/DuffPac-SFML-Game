@@ -69,6 +69,14 @@ namespace Toolbox
 			printf("Failed to load Texture '%s' from location '%s'.\n", _name, _filepath);
 	}
 
+	// Resizes a target texture
+	void Game::ResizeSprite(sf::Sprite& _sprite, sf::Vector2u _newsize)
+	{
+		sf::Vector2f oldsize = sf::Vector2f(_sprite.getLocalBounds().width, _sprite.getLocalBounds().height);
+		sf::Vector2f newsize = sf::Vector2f(_newsize);
+		_sprite.setScale(newsize.x/oldsize.x, newsize.y/oldsize.y);
+	}
+
 	void Game::LoadFont(std::string _name, std::string _filepath)
 	{
 		sf::Font temp;
@@ -76,6 +84,7 @@ namespace Toolbox
 			fonts[_name] = temp;
 		else
 			printf("Failed to load Font '%s' from location '%s'.\n", _name, _filepath);
+		
 	}
 
 	// ENF OF CODE SOURCED FROM (OR HEAVILY INFLUENCED BY):

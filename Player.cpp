@@ -48,9 +48,9 @@ namespace Mobiles
 			delta_pos = RIGHT;
 			keypress = true; 
 			sprite.setRotation(ROT_RIGHT);
-		}			
+		}					
 
-		gamescene.free // totally wrong way to go about this patch
+		//gamescene.free // totally wrong way to go about this patch
 
 		// Only change delta if a keypress has been logged!
 		if (keypress) 

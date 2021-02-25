@@ -20,6 +20,7 @@ namespace Toolbox
 		std::map<std::string, sf::Font> fonts;
 
 		void LoadTexture(std::string _name, std::string _filepath);
+		void ResizeSprite(sf::Sprite& _sprite, sf::Vector2u _newsize);
 		void LoadFont(std::string _name, std::string _filepath);
 
 		sf::Texture& GetTexture(std::string _name);

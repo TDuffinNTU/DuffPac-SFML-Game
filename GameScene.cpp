@@ -14,6 +14,8 @@ namespace Toolbox
 		// Load bg
 		gameptr->LoadTexture("DEFAULTBG", "Sprites/Default.png");
 		bg.setTexture(gameptr->GetTexture("DEFAULTBG"));
+		gameptr->ResizeSprite(bg, sf::Vector2u(WIDTH, HEIGHT));
+		
 
 		// Load button textures
 		gameptr->LoadTexture("RETURNBUTTON", "Sprites/MenuButton.png");
@@ -63,12 +65,14 @@ namespace Toolbox
 
 		// Load the player at the start pos
 		LoadLevel();
-		player = new Mobiles::Player(grid_offset, grid_size, player_start_pos, 
-			gameptr->GetTexture("PLAYER"));
+		player = new Mobiles::Player(gameptr->ActiveScene(),grid_offset, grid_size, player_start_pos, gameptr->GetTexture("PLAYER"));
 	}
 
 	void GameScene::Input() 
 	{
+
+		//bg.setPosition(sf::Vector2f(sf::Mouse::getPosition()));
+		//bg.setPosition(;
 		sf::Event event;
 		// Event loop for handling input
 		while (gameptr->window.pollEvent(event))
